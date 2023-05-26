@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Code Checkout
-        run: echo "Get code from GIT"
+        uses: actions/checkout@v2
       - name: Code build
         run: echo "This will build the job"
       - name: Image Upload
-        run: ls -al 
+        run: ls -al
