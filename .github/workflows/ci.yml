@@ -17,6 +17,6 @@ jobs:
       - name: Code Checkout
         uses: actions/checkout@v2
       - name: Code build
-        run: echo "This will build the job"
+        run: docker -v
       - name: Image Upload
-        run: ls -al
+        run: docker -v
