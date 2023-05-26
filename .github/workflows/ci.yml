@@ -19,4 +19,4 @@ jobs:
       - name: Code build
         run: docker -v
       - name: Image Upload
-        run: docker -v
+        run: docker container ls
