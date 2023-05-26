@@ -1,0 +1,22 @@
+##### Workflows ######
+
+name: First CI Workflow
+
+on:
+  push:
+    branches: 
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code Checkout
+        run: echo "Get code from GIT"
+      - name: Code build
+        run: echo "This will build the job"
+      - name: Image Upload
+        run: echo "This will upload the image to docker hub"  
