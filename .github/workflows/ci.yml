@@ -19,4 +19,4 @@ jobs:
       - name: Code build
         run: echo "This will build the job"
       - name: Image Upload
-        run: echo "This will upload the image to docker hub"  
+        run: ls -al 
