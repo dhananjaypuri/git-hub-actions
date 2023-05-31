@@ -19,4 +19,6 @@ jobs:
       - name: Code build
         run: docker -v
       - name: Image Upload
-        run: docker container ls
+        run: |
+          docker container ls
+          echo $DOCKER_PASSWD
