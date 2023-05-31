@@ -26,7 +26,7 @@ jobs:
         run: |
           docker container ls
           echo ${{ env.USERNAME }}
-          echo ${{ secrets.DOCKER_PASSWD }} | docker login -u ${UNAME} --password-stdin
+          echo ${{ secrets.DOCKER_PASSWD }} | docker login -u ${{ env.UNAME }} --password-stdin
       - name: Deploy on server
         uses: appleboy/ssh-action@v0.1.10
         with:
