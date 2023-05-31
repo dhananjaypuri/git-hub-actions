@@ -13,6 +13,9 @@ on:
 jobs:
   build_job:
     runs-on: ubuntu-latest
+    env:
+      UNAME: dhananjaypuri
+      PASSWD: mydocker@123
     steps:
       - name: Code Checkout
         uses: actions/checkout@v2
@@ -21,4 +24,5 @@ jobs:
       - name: Image Upload
         run: |
           docker container ls
-          echo "$DOCKER_PASSWD"
+          echo $UNAME
+          echo "$PASSWD"
