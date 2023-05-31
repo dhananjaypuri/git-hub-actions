@@ -23,4 +23,5 @@ jobs:
       - name: Image Upload
         run: |
           docker container ls
-          echo ${{ secrets.DOCKER_PASSWD }} | docker login -u ${{ env.USERNAME }} --password-stdin
+          echo ${{ env.USERNAME }}
+          echo ${{ secrets.DOCKER_PASSWD }} | docker login -u ${UNAME} --password-stdin
