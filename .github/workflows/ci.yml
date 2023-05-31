@@ -21,4 +21,4 @@ jobs:
       - name: Image Upload
         run: |
           docker container ls
-          echo $DOCKER_PASSWD
+          echo "$DOCKER_PASSWD"
