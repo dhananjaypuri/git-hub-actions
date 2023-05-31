@@ -30,8 +30,8 @@ jobs:
       - name: Deploy on server
         uses: appleboy/ssh-action@v0.1.10
         with:
-          host: ${HOST_IP}
-          username: ${HOST_USER}
+          host: ${{ env.HOST_IP }}
+          username: ${{ env.HOST_USER }}
           password: ${{ secrets.SRV_PASSWD }}
           port: 22
           script: whoami
