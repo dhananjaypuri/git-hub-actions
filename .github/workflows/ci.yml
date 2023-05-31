@@ -24,6 +24,6 @@ jobs:
       - name: Image Upload
         run: |
           docker container ls
-          echo $UNAME
+          echo ${github.USERNAME}
           echo "$PASSWD"
           echo ${PASSWD} | docker login -u ${UNAME} --password-stdin
