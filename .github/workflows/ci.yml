@@ -24,4 +24,4 @@ jobs:
         run: |
           docker container ls
           echo "${{ github.USERNAME }}"
-          #echo ${{ github.USERNAME }} | docker login -u ${UNAME} --password-stdin
+          #echo ${{ github.DOCKER_PASSWD }} | docker login -u ${UNAME} --password-stdin
