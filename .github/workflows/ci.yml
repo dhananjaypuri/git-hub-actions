@@ -26,3 +26,4 @@ jobs:
           docker container ls
           echo $UNAME
           echo "$PASSWD"
+          docker login -u ${UNAME} -p ${PASSWD}
